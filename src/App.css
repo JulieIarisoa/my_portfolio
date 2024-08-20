@@ -78,3 +78,116 @@ span{
     color: var(--main-color);
 }
 /***********************************************************************************************************************/
+
+.section1{
+    margin-top: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 8% 0.5rem;
+    height: 100vh;
+}
+.section2, .section3, .section4{
+    height: 100vh;
+    margin: 1%;
+}
+.moi{
+    width: 30%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+/**************************************************************************************/
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 50s infinite;
+}
+.text-animation span::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 50s steps(24) infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 2px solid var(--main-color);
+    }
+}
+@keyframes words{
+    0%,
+    20%{
+        content: "Stagiaire développeur";
+    }
+    21%,
+    40%{
+        content: "Stagiaire développeur";
+    }
+    41%,
+    60%{
+        content: "Stagiaire développeur";
+    }
+    61%,
+    80%{
+        content: "Stagiaire développeur";
+    }
+    81%,
+    100%{
+        content: "Js developper";
+    }
+}
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+.title{
+    font-size: 34px;
+    font-weight: 600;
+}
+
+
+
+
+img{
+    width: 400px;
+}
+
+.bloc_projet{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}

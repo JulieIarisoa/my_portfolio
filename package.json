@@ -1,5 +1,5 @@
 {
-  "name": "school-management",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
+    "gh-pages": "^6.1.1",
     "react-router-dom": "^6.4.1"
   }
 }
